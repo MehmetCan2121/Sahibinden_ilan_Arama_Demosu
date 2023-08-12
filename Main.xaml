@@ -1,0 +1,620 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1498,7551" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>UiPath.OCR.Activities</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="Bu süreç ilanlar.xlsx excel dosyasındaki verileri okuyarak Sahibinden.com sitesinden bir arama gerçekleştiriyor ve bu arama sonucunda çıkan sonuçları ayrı olarak excel dosyalarına kaydediyor. Süreç Adımları Aşağıda Verilmiştir.&#xA;1-ilanlar.xlsx excel dosyasını oku.&#xA;2-Excel Dosayasındaki rowları gez ve değişkene ata.&#xA;3-Sahibinden.com sitesine erişim sağla.&#xA;4-Alınan değerleri ilanda yerlerine doldur ve arama yap.&#xA;5-Çıkan sonuçları data tablede tut.&#xA;6-Data Tablede tuttuğun verileri yeni bir excel dosyasına kaydet.&#xA;7-BİTİR" DisplayName="Ana " sap:VirtualizedContainerService.HintSize="1056,7486" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="Strİl" />
+      <Variable x:TypeArguments="x:String" Name="StrMaxtl" />
+      <Variable x:TypeArguments="x:String" Name="StrMintl" />
+      <Variable x:TypeArguments="x:String" Name="StrOdaSayisi" />
+      <Variable x:TypeArguments="x:String" Name="StrKonut" />
+      <Variable x:TypeArguments="x:String" Name="Strilce" />
+      <Variable x:TypeArguments="sd:DataTable" Name="DtVeriler" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Bilgilendşrme Mesajı" sap:VirtualizedContainerService.HintSize="994,141" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Proje Başlatıldı&quot;]" />
+    <Sequence DisplayName="İlanlar.xlsx Excel Dosayası okuma." sap:VirtualizedContainerService.HintSize="994,7047" sap2010:WorkflowViewState.IdRef="Sequence_6">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Dosya okuma işlemi yapıldı." sap:VirtualizedContainerService.HintSize="932,281" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" WorkbookPath="İlanlar.xlsx">
+        <ui:ExcelApplicationScope.Body>
+          <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,171" sap2010:WorkflowViewState.IdRef="Sequence_8">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:ExcelReadRange AddHeaders="True" DataTable="[DtVeriler]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="388,60" sap2010:WorkflowViewState.IdRef="ExcelReadRange_1" SheetName="Sayfa1">
+                <ui:ExcelReadRange.Range>
+                  <InArgument x:TypeArguments="x:String">
+                    <Literal x:TypeArguments="x:String" Value="" />
+                  </InArgument>
+                </ui:ExcelReadRange.Range>
+              </ui:ExcelReadRange>
+            </Sequence>
+          </ActivityAction>
+        </ui:ExcelApplicationScope.Body>
+      </ui:ExcelApplicationScope>
+      <Sequence DisplayName="Data Table Kontrol" sap:VirtualizedContainerService.HintSize="932,6434" sap2010:WorkflowViewState.IdRef="Sequence_11">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <If Condition="[DtVeriler.RowCount &gt; 0]" DisplayName="DtVeriler Tablosunda veri varm yokmu kontrolü sağlandı" sap:VirtualizedContainerService.HintSize="870,6323" sap2010:WorkflowViewState.IdRef="If_1">
+          <If.Then>
+            <Sequence sap:VirtualizedContainerService.HintSize="836,5782" sap2010:WorkflowViewState.IdRef="Sequence_12">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Sahibinden.com'a erişim sağlandı" sap:VirtualizedContainerService.HintSize="794,5694" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="eb6ed2e7-e687-41aa-8b8b-40cb6f4144c2" Version="V2">
+                <uix:NApplicationCard.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="760,5437" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:LogMessage DisplayName="Bilgilendirme Yapıldı" sap:VirtualizedContainerService.HintSize="698,143" sap2010:WorkflowViewState.IdRef="LogMessage_20" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;sahibinden.com sitesine Erişim Sağlandı&quot;]" />
+                      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[DtVeriler]" DisplayName="Okunan Excel Dosyasının Rowlarını Değiskene Atama Yapıldı" sap:VirtualizedContainerService.HintSize="698,5139" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                        <ui:ForEachRow.Body>
+                          <ActivityAction x:TypeArguments="sd:DataRow">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="664,4953" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:MultipleAssign DisplayName="Exceldeki Rowlar Değişkene Atandı" sap:VirtualizedContainerService.HintSize="622,256" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+                                <ui:MultipleAssign.AssignOperations>
+                                  <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
+                                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+                                      <ui:AssignOperation.To>
+                                        <OutArgument x:TypeArguments="x:String">[Strİl]</OutArgument>
+                                      </ui:AssignOperation.To>
+                                      <ui:AssignOperation.Value>
+                                        <InArgument x:TypeArguments="x:String">[CurrentRow.Item("İl").ToString]</InArgument>
+                                      </ui:AssignOperation.Value>
+                                    </ui:AssignOperation>
+                                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+                                      <ui:AssignOperation.To>
+                                        <OutArgument x:TypeArguments="x:String">[Strilce]</OutArgument>
+                                      </ui:AssignOperation.To>
+                                      <ui:AssignOperation.Value>
+                                        <InArgument x:TypeArguments="x:String">[CurrentRow.Item("ilce").ToString]</InArgument>
+                                      </ui:AssignOperation.Value>
+                                    </ui:AssignOperation>
+                                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+                                      <ui:AssignOperation.To>
+                                        <OutArgument x:TypeArguments="x:String">[StrMinTl]</OutArgument>
+                                      </ui:AssignOperation.To>
+                                      <ui:AssignOperation.Value>
+                                        <InArgument x:TypeArguments="x:String">[CurrentRow.Item("Min TL").ToString]</InArgument>
+                                      </ui:AssignOperation.Value>
+                                    </ui:AssignOperation>
+                                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
+                                      <ui:AssignOperation.To>
+                                        <OutArgument x:TypeArguments="x:String">[StrMaxtl]</OutArgument>
+                                      </ui:AssignOperation.To>
+                                      <ui:AssignOperation.Value>
+                                        <InArgument x:TypeArguments="x:String">[CurrentRow.Item("Max TL").ToString]</InArgument>
+                                      </ui:AssignOperation.Value>
+                                    </ui:AssignOperation>
+                                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
+                                      <ui:AssignOperation.To>
+                                        <OutArgument x:TypeArguments="x:String">[StrOdaSayisi]</OutArgument>
+                                      </ui:AssignOperation.To>
+                                      <ui:AssignOperation.Value>
+                                        <InArgument x:TypeArguments="x:String">[CurrentRow.Item("Oda Sayisi").ToString]</InArgument>
+                                      </ui:AssignOperation.Value>
+                                    </ui:AssignOperation>
+                                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_6">
+                                      <ui:AssignOperation.To>
+                                        <OutArgument x:TypeArguments="x:String">[StrKonut]</OutArgument>
+                                      </ui:AssignOperation.To>
+                                      <ui:AssignOperation.Value>
+                                        <InArgument x:TypeArguments="x:String">[CurrentRow.Item("Konut").ToString]</InArgument>
+                                      </ui:AssignOperation.Value>
+                                    </ui:AssignOperation>
+                                  </scg:List>
+                                </ui:MultipleAssign.AssignOperations>
+                              </ui:MultipleAssign>
+                              <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Bilgilendirme yapıldı." sap:VirtualizedContainerService.HintSize="622,85" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;İl :&quot;+Strİl+Environment.NewLine+ &quot;İlçe : &quot;+Strilce+Environment.NewLine+&quot;Minumum TL:&quot;+StrMintl+Environment.NewLine+&quot;Maximum Tl :&quot;+StrMaxtl+Environment.NewLine+&quot;Oda Sayısı :&quot;+StrOdaSayisi+Environment.NewLine+&quot;Konut :&quot;+StrKonut]" />
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="622,143" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Veriler Eksiksiz Bir Şekilde Alındı.&quot;]" />
+                              <Sequence DisplayName="Alınan Veriler ile Arama İşlemi Yapılacak" sap:VirtualizedContainerService.HintSize="622,4261" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                                <Sequence.Variables>
+                                  <Variable x:TypeArguments="x:Boolean" Name="FiltreBulunamadı" />
+                                </Sequence.Variables>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NSelectItem DisplayName="Okunan Konut Degiskeni Seçildi" sap:VirtualizedContainerService.HintSize="560,157" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="[StrKonut]" ScopeIdentifier="eb6ed2e7-e687-41aa-8b8b-40cb6f4144c2" Version="V3">
+                                  <uix:NSelectItem.Items>
+                                    <scg:List x:TypeArguments="x:String" Capacity="4">
+                                      <x:String>Satılık</x:String>
+                                      <x:String>Kiralık</x:String>
+                                      <x:String>Günlük Kiralık</x:String>
+                                      <x:String>Devren Satılık Konut</x:String>
+                                    </scg:List>
+                                  </uix:NSelectItem.Items>
+                                  <uix:NSelectItem.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://www.sahibinden.com/kategori/emlak-konut" CvTextArgument="Devren Satilik ..." CvType="Text" DesignTimeRectangle="726, 298, 82, 16" DesignTimeScaleFactor="0.8999999761581421" ElementType="Text" FriendlyName="'Devren Satılık Konut'" FullSelectorArgument="&lt;webctrl parentid='searchForm' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='searchForm' tag='SPAN' type='' class='' aaname='Devren Satılık Konut' check:innerText='Devren Satılık Konut' /&gt;" Guid="8ea47421-d769-422a-84ed-e6addeee45d7" ImageBase64="" InformativeScreenshot="62a07d1458f1838379e8b800242c7c4e.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Konut Fiyatları ve Emlak İlanları sahibinden.com&amp;apos;da' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target CvTextArgument="Konut" CvType="Text" DesignTimeRectangle="711, 243, 99, 27" ElementType="Text" FriendlyName="'Konut'" FullSelectorArgument="&lt;webctrl aaname='Konut' parentid='container' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Konut' parentid='container' tag='A' type='' class='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGcAAAAfCAYAAAD6MNNVAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPPSURBVGhD7ZlLSFRRGIDPuY+Z0VF0HJPKZ1L0IBI3QoREi7AJk1y1aNU+ikgTNYVcVFSLioigIHBl4SIqR6cHRSJSQWIRueqhUroMDHos/v7/OHe6Tuc6SnPn3sa7+IY55/7nDPN/859z7lxWXqhABfJrlnm4hNhJBg+6GLDKEMop0qRBHs5Ach6SHKqaymKfNMjDGWKdWDkoiJXmKVBerEuDPJyB5BAoR4WyVd6y5iaGDDlrgyinxJPjJoY6UA7CQgEOa8LOndbmpjhEb/mg5XAexPr98G2aw8RzFRr3FEB5WRjejarScdmMkEOVE/BxKC3IfOV8/8zg/SsVzp/KhZqtRUJE7bYQXDydA0/u6hDZvbLlEMynMVidn9kEfP3I4ek9HQ4dzIeqyrCQYFC9Lgz7Gwugtia0ouWIytFVBiW478iC0s3PGQafxhW4fikAO3cULpBixctHmhgnmy9bITHiKE1yinPtl0MJHhnU4DjuLZs3zi9jS4H2ohco6McX+bzZyCDKGSI5qsKgMGC/nPFnKrQfC0JFuVyCFZUVYehqDcLbEYt9cYxBM0OuxdtR/FJtpuv/IUIOLWsK55Cnc2lQOvkwpsDjO7pI+Pa6ENy+6Re0Hgn+JSSZWL8PJl9bnCiT5PTg++HkmDRBc2dC/CBWjagchSkQ4PKgdDM7oYhk00nM6Ou74U9IOIGi6KBgsKt+fl+afrPIUd8kZxgT14OVY75OfYySSjQxmIr3U6JpjEg4Yowz4knwFF6n9734GVbz2EFCjs5UUPEDZUHpJpWcqxdyFsQ3ReaP00uSgwlLTpo5udQ2//INKSShl8bG+63kJI+3kyguaSSI6VxDOfYva4SdcsQvGknsPYg50clto3KoX8iJi3WDnD/LmqIB55k5SqeSc/lsDsxN8gSNDcuoHEzkYjKS226XE6NHBowrwHhmHhmkkrO+OgxbNhUlMG5QlyqH2uYEplrWUskR/Rbj7WQIxRAMSwdf7JczGtPEqYuSTTeg1CbOdOcm5Fgx0OcTsbJ5k+WIo7SpbSRbEBdA/VZyzMtkT3ysIceQbZ7HDhLLGld5RipHlvTlIps3G4l2oCC6z+EKB56BypEle7nI5s1GBlAOCcI9xw86s/9f6Svncv4Z2bzZiDhKU+UENA2qHHye4/E3A7jfRGnPqdvA4ED9yvtb3s0MYNUQ7GiTCh3N8iAPZ7iP+w3tO6xzH4OuvfIgD2cgOQTrbGDQ7clxFQk5HRGsHKweWZCHM4g9h+S0RDi04R2vLMjDGUTltKOcmWEGHu7Ek+NaGPwGn7an/gEtbLYAAAAASUVORK5CYII=" SearchSteps="Selector" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NSelectItem.Target>
+                                </uix:NSelectItem>
+                                <uix:NSelectItem DisplayName="Okunan İl Değiskeni Seçildi." sap:VirtualizedContainerService.HintSize="560,157" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="[Strİl]" ScopeIdentifier="eb6ed2e7-e687-41aa-8b8b-40cb6f4144c2" Version="V3">
+                                  <uix:NSelectItem.Items>
+                                    <scg:List x:TypeArguments="x:String" Capacity="50">
+                                      <x:String>İl</x:String>
+                                      <x:String>İstanbul</x:String>
+                                      <x:String>Ankara</x:String>
+                                      <x:String>İzmir</x:String>
+                                      <x:String>Adana</x:String>
+                                      <x:String>Adıyaman</x:String>
+                                      <x:String>Afyonkarahisar</x:String>
+                                      <x:String>Ağrı</x:String>
+                                      <x:String>Aksaray</x:String>
+                                      <x:String>Amasya</x:String>
+                                      <x:String>Antalya</x:String>
+                                      <x:String>Ardahan</x:String>
+                                      <x:String>Artvin</x:String>
+                                      <x:String>Aydın</x:String>
+                                      <x:String>Balıkesir</x:String>
+                                      <x:String>Bartın</x:String>
+                                      <x:String>Batman</x:String>
+                                      <x:String>Bayburt</x:String>
+                                      <x:String>Bilecik</x:String>
+                                      <x:String>Bingöl</x:String>
+                                      <x:String>Bitlis</x:String>
+                                      <x:String>Bolu</x:String>
+                                      <x:String>Burdur</x:String>
+                                      <x:String>Bursa</x:String>
+                                      <x:String>Çanakkale</x:String>
+                                      <x:String>Çankırı</x:String>
+                                      <x:String>Çorum</x:String>
+                                      <x:String>Denizli</x:String>
+                                      <x:String>Diyarbakır</x:String>
+                                      <x:String>Düzce</x:String>
+                                      <x:String>Edirne</x:String>
+                                      <x:String>Elazığ</x:String>
+                                      <x:String>Erzincan</x:String>
+                                      <x:String>Erzurum</x:String>
+                                      <x:String>Eskişehir</x:String>
+                                      <x:String>Gaziantep</x:String>
+                                      <x:String>Giresun</x:String>
+                                      <x:String>Gümüşhane</x:String>
+                                      <x:String>Hakkari</x:String>
+                                      <x:String>Hatay</x:String>
+                                      <x:String>Iğdır</x:String>
+                                      <x:String>Isparta</x:String>
+                                      <x:String>Kahramanmaraş</x:String>
+                                      <x:String>Karabük</x:String>
+                                      <x:String>Karaman</x:String>
+                                      <x:String>Kars</x:String>
+                                      <x:String>Kastamonu</x:String>
+                                      <x:String>Kayseri</x:String>
+                                      <x:String>Kırıkkale</x:String>
+                                      <x:String>Kırklareli</x:String>
+                                    </scg:List>
+                                  </uix:NSelectItem.Items>
+                                  <uix:NSelectItem.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://www.sahibinden.com/kategori/emlak-konut" CvElementArea="609, 364, 121, 37" CvTextArea="616, 373, 8, 15" CvTextArgument="iI" CvType="InputBox" DesignTimeRectangle="352, 373, 88, 20" DesignTimeScaleFactor="1.1299999952316284" ElementType="Text" FriendlyName="'İl'" FullSelectorArgument="&lt;html app='chrome.exe' title='Konut Fiyatları*' /&gt;&lt;webctrl aaname='İl' parentid='searchForm' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='İl' parentid='searchForm' tag='SPAN' type='' class='' check:innerText='İl' /&gt;" Guid="bc5e6803-372d-4c2b-9367-9ab91bffc64f" ImageBase64="" InformativeScreenshot="40d5e125820797ee8abb25eb68516db1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Konut Fiyatları ve Emlak İlanları sahibinden.com&amp;apos;da' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target CvElementArea="343, 364, 122, 37" CvTextArea="350, 373, 8, 15" CvTextArgument="iI" CvType="InputBox" DesignTimeRectangle="344, 365, 120, 36" FriendlyName="'İlİl İstanbul'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='3' parentid='searchForm' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='sahibindenSelect city activeSelect closed' parentid='searchForm' tag='DIV' aaname='' check:innerText='İl' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHwAAAAoCAYAAAA8AZ5fAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAARoSURBVHhe7Zxdb9xEFIb3P/V3wb9AtFe0KhcIiqgKvUEtX4WrtkJcpEAiRBYlLYki2evvXe9H0uRyo8N5z3x01l2TLdzE3vNKbzwzPvbY83jszeysB+fzks5n1khbv+b861nB5YVPn00Do2xeic/nYzHizuqMFuOE5lVMsyqSJbyoRlz+756PORa226w3x9l9mfS6mDa3bzMLXcKRdUzTwDVcjMSTwqZL5JGOpWycxVSlES8jqnM2ynOURzRxZWKzzbRMaDbmdpvkdArXWGbcFonsH9uVvL8iiShnF5yuuAz1THJ3LGxOi+0x4ViMuV7rwdk0F0hNn9YpV5p4L2CBAnMj2fRikvIFwPtgn/J2yBvgzYblWN/gAeSVmEbDWzfLN4m/2qO12xrAkbfkAYXtoIq53DVoHTSog1MyGAHMUCcMF+kxl4fAUY71NQOfM+CwHdHmOEZcZIjDBeSBs6UOgLc28PmiYuDjzFjWoV7Ug2Pl9QPAcY1/cnRIe3u7tLOzo+6J93Z36fjVIV+UCUNPaOCu+JOjAxoO9+ni4oJU/RF4guvx0UuqqxQ93PRu9GyF3U+BK3o6nu0eOLq/qr8C37F5hivwbRD42g9tCnwbJMD5k7r/0KbA+y3fwxX4dgh88f84AzejYQq83/LA3RCiAu+3PHA3RqzA+y3wxRDwAH/gq4FP6bv3btBHf9qsqlMS4Nyx3wH4qqbfv0837gxtTnXd1ejhm9zSV3u4Au+WPHAMt+GrNQXeb4HvFMDx/SqswK+/bj/4gT789BF98MnX3jc/e0QfP/zJRrTL9/BsFFGmwDuhpy/26Q5DD4Ej/+zXfRvRLg8c02XKTIF3QeVkRl9888z38pu8vP/tc6rqhY1olwdupujoM7wLWi6X0pvvfvlEgN/96kd6/tuQLi8vbUS7PPDNB14U+HXQqJjQwye/0K17j2WJ/CYCX5nEaCbo6S29K1ouL+nn3/+izx8/lSXym0iAy9AqwwZ0Bd4dRVlFfxyeyHJTgS9mzr4DcFWXBb6Ysvyfh1ZV3ZL0cNzSFfh2CHxlxgtg4xcWCrzfEuD86OZ/yxT4Ngh8Md6iwLdEBrg+w7dGCnzLJMD/z4wXVbdkerh7hivw3ssAtyNt2sP7L/AFa39Lx89J9efC/ZT8XHhvV4bQPfDjVwc03NcXAvRN4Amu4OtH2kLo6Ono/up+GDz/fnkgLwIq0wbwNssLa/LAtsyvX7PurXSLMaAvL7xh49ucpt3La9wLbdKRcQLHxiPrODKOopiNpbErN3Exb8O2+0h5n5jTlyWxOB1hPcfZeLetbB+mbZ3Yn8S6sjAmtI83dseOY0GdTWcwjsmmzXm/Hefaw1nOxS3lnFza5K8Abt5QBHt4XLZivk2s+g3MNgtkmIGGsDG3TuBa5/aAcSIObMww0Zgh0CZY3+CuUV1j2IbAfnPsP6irzGIqYKnXxJr6rjBinNeta5a1WC4EtxTbC1MuTmMAdhfAWkt7vbGcZ+AijekfnVdaqlRTI40AAAAASUVORK5CYII=" SearchSteps="Selector" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NSelectItem.Target>
+                                </uix:NSelectItem>
+                                <ui:LogMessage DisplayName="Bilgilendirme yapıldı." sap:VirtualizedContainerService.HintSize="560,143" sap2010:WorkflowViewState.IdRef="LogMessage_12" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;StrKonut ve Strİl değişkenleri sorunsuz seçildi&quot;]" />
+                                <ui:SelectItem AlterIfDisabled="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" ContinueOnError="True" DisplayName="Okunan İlçe Değiskeni Seçildi." sap:VirtualizedContainerService.HintSize="560,155" sap2010:WorkflowViewState.IdRef="SelectItem_1" Item="[Strilce]">
+                                  <ui:SelectItem.Items>
+                                    <scg:List x:TypeArguments="x:String" Capacity="64">
+                                      <x:String>İlçe</x:String>
+                                      <x:String>Adalar</x:String>
+                                      <x:String>Arnavutköy</x:String>
+                                      <x:String>Ataşehir</x:String>
+                                      <x:String>Avcılar</x:String>
+                                      <x:String>Bağcılar</x:String>
+                                      <x:String>Bahçelievler</x:String>
+                                      <x:String>Bakırköy</x:String>
+                                      <x:String>Başakşehir</x:String>
+                                      <x:String>Bayrampaşa</x:String>
+                                      <x:String>Beşiktaş</x:String>
+                                      <x:String>Beykoz</x:String>
+                                      <x:String>Beylikdüzü</x:String>
+                                      <x:String>Beyoğlu</x:String>
+                                      <x:String>Büyükçekmece</x:String>
+                                      <x:String>Çatalca</x:String>
+                                      <x:String>Çekmeköy</x:String>
+                                      <x:String>Esenler</x:String>
+                                      <x:String>Esenyurt</x:String>
+                                      <x:String>Eyüpsultan</x:String>
+                                      <x:String>Fatih</x:String>
+                                      <x:String>Gaziosmanpaşa</x:String>
+                                      <x:String>Güngören</x:String>
+                                      <x:String>Kadıköy</x:String>
+                                      <x:String>Kağıthane</x:String>
+                                      <x:String>Kartal</x:String>
+                                      <x:String>Küçükçekmece</x:String>
+                                      <x:String>Maltepe</x:String>
+                                      <x:String>Pendik</x:String>
+                                      <x:String>Sancaktepe</x:String>
+                                      <x:String>Sarıyer</x:String>
+                                      <x:String>Şile</x:String>
+                                      <x:String>Silivri</x:String>
+                                      <x:String>Şişli</x:String>
+                                      <x:String>Sultanbeyli</x:String>
+                                      <x:String>Sultangazi</x:String>
+                                      <x:String>Tuzla</x:String>
+                                      <x:String>Ümraniye</x:String>
+                                      <x:String>Üsküdar</x:String>
+                                      <x:String>Zeytinburnu</x:String>
+                                    </scg:List>
+                                  </ui:SelectItem.Items>
+                                  <ui:SelectItem.Target>
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a701e42b-9937-4f46-a9f4-b607b2a8aa37" InformativeScreenshot="191e02ff3978b61fa196b69af44b9816" Selector="&lt;webctrl aaname='*l*e' parentid='searchForm' tag='SPAN' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span' visibleinnertext='*l*e' /&gt;">
+                                      <ui:Target.TimeoutMS>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                      </ui:Target.TimeoutMS>
+                                      <ui:Target.WaitForReady>
+                                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                                      </ui:Target.WaitForReady>
+                                    </ui:Target>
+                                  </ui:SelectItem.Target>
+                                </ui:SelectItem>
+                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Okunan Minimum TL Değiskeni Yazdırıldı." EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="560,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="eb6ed2e7-e687-41aa-8b8b-40cb6f4144c2" Text="[StrMintl]" Version="V3">
+                                  <uix:NTypeInto.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://www.sahibinden.com/kategori/emlak-konut" CvElementArea="719, 336, 71, 29" CvTextArea="727, 344, 33, 11" CvTextArgument="Min TL" CvType="InputBox" DesignTimeRectangle="720, 336, 69, 29" DesignTimeScaleFactor="0.8999999761581421" ElementType="InputBox" FriendlyName="'INPUT minPrice'" FullSelectorArgument="&lt;webctrl id='minPrice' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='minPrice' tag='INPUT' type='text' class='priceField' aaname='' /&gt;" Guid="3ca7ffe0-757e-41d1-bddf-cc1afa5df492" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEkAAAAhCAYAAACV1IbrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIdSURBVGhD7ZptcoIwEIa9/w24gBdgvAGewZ+ABtRwAsdxtvsGFgIlNdIva/edeapAAu5jBgllVeQ5/RTlF7EPUeR08DDlQLXPqe44HnI6PcAq553PFfQdzBUcAwT470WIjy/nIGIEFiOSIGiRJFAZQ9ZaxeNcm1aSfMtzjRT7XtLlcqHb7aYwcDErCRs1beBCJd2JSoqISoqISorISJJcpKmkcVRSRBZJarZrSpKE0l23Atmlbt1622CB0iTlvzFB28T1HdP2320mx/mFLJa0XrOozfDpUQzWtZKWxe130v9vS9pm3mhpR07WF+mNJJuxvIx23ehL+H1I47NLOkOSzKrjJDVDARDBo2oociKJ5bTrG8p4tGUWG97n6SUZSOpuNcRKwnkIr1hGIUFJ/ej5j5KcgJTSrvBXl+TOSQ9LckUP55lXl2QXjaRJvkvS6NLA+0X9qYikRiThluc9Sf8tw0gqaSX3hVXSOCLJ8C+/SgpEJMGNSgqkH0kqKRwdSRERSZiNqKRARBLmtSopEJUUkaCk6/XaNdHABZyMzkl1pc8CTKmNGST1j6cwNXPc53QCPAPGTSdrCrJVQQ1jK152r6W7ZD8fSm5XuD7oi+sKEe/gg4zA8T7A7+vmldwHyM1BIP/h8fG3zyH7kP09wso9jtIJcVIgxAcymDML6WUwENoXxjv6kK5oX4br58Pt5ENJYXMy5pD2Pn6RnyOnNyyEVv5mr9WAAAAAAElFTkSuQmCC" InformativeScreenshot="3c4ab27d3cfb2c443692a8417d38d86f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Konut*' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                                  </uix:NTypeInto.Target>
+                                </uix:NTypeInto>
+                                <ui:LogMessage DisplayName="Bilgilendirme yapıldı." sap:VirtualizedContainerService.HintSize="560,143" sap2010:WorkflowViewState.IdRef="LogMessage_13" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Strİlçe ve StrMinTl değişkenleri sorunsuz seçildi&quot;]" />
+                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Okunan Maximum TL Değiskeni Yazdırıldı." EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="560,218" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="eb6ed2e7-e687-41aa-8b8b-40cb6f4144c2" Text="[StrMaxtl]" Version="V3">
+                                  <uix:NTypeInto.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://www.sahibinden.com/kategori/emlak-konut" CvElementArea="801, 336, 72, 31" CvTextArea="808, 344, 37, 11" CvTextArgument="Max TL" CvType="InputBox" DesignTimeRectangle="802, 336, 69, 29" DesignTimeScaleFactor="0.8999999761581421" ElementType="InputBox" FriendlyName="'INPUT maxPrice'" FullSelectorArgument="&lt;webctrl id='maxPrice' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='maxPrice' tag='INPUT' type='text' class='priceField' aaname='' /&gt;" Guid="f5a4bdbe-0185-4030-896f-30d58cbe7fdb" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEkAAAAhCAYAAACV1IbrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANaSURBVGhD7ZppbuMwDIVz/xvkAr5AkBukZ8hPy/uSYNqmnSZFEbB8tGTT28SzYBAgIvBgi2Ys6TMp24hXVRrSlEooabZVFlKdmc6vVHBMFoeURrzlfbTbY6yUj5kwpJCFbWya+JyF2EnhmBXi5oTYHMK+9SU8DvQDRdwX+s+SiCLXjoz8RuaUR1QXMR3KhI6HnFVRXRUSH3MclLBWADGC4/YxYHu8ziI+sekfZ8kgJc7I5B2AjAcLcBhYA8mQMU2nApTV/O62dJwDJFJtgcRtBwkXBX3naUxFlvI+988+9F/lCT0fSzo9H+n99Qf9fH+hj483Op8/eP9NQCUxj9VKMklA5SnVde1lVZUA1WSiZBI0FfjoKousKzcH6fPzk67X68MLHMDjdHplUHkfEgK8kXAAj/P5TG+nk4c0ZQ7S5XIReUgT1od09pCmzENaYC0kXpMu/OzkIU2Yg/R+euGHy1d+mGRAkIfUmYNU8ltGmcfNE7e8dvwS0p426zWtgx0drId4bxewb73ho39u+y3OMdaGT3p4Cih46nr8X+YgyWsYv9+tagBaBIkHHAS0q62r3kk7+EtIrcn59EW4B0jIJEDC2/AiSBvaqUE3E9iJH5DQbjNha7HtNyr7msxDhkzaPULiUkPJ/UYmMQw1kf0WWWX9TZC1vs9N9OaE7xASsqgtt9sLt5s4sgFbbsuEFBBMsl1TNDi7drnsmrN7hIRyQybJwr0YEjKIS2bLZSST1vDceqXAiVlIAwAju2dIZWKoiM1iSLLO2LtP5x8e7yBhoovuVHcJiZ8hc0Or1ISUhMszqW+dHxNyi7bc1nkrPlVm8M9OegZSezOAbmXjP7IRJAC6DemxrIXEgCos3AkyieUhdeYgAZCHNGMdJGQSl1vMpQZ5SJ2NIMn/UR5Szxwk+V8O5eYzaWyjTMJ65CH1rYOETLKQ/CNA38aQGJCH1LcOkis3BuTK7evry4Y9toGDQMJHIoDkFu489d8CaFVlZstN3d20XAlOSce5xwftg/A+WKamefeB0lA+wxlKvlBxMUpyBSf9M+KrjbXjpophG5/eKFkoray/LTetIRgtHTcHCTeDwkFyMCyYIaAGyLRaQLPxGhAmpgAMBUAyae3vQBzsVrcP+HapiOgbN2ZWVuTBDtAAAAAASUVORK5CYII=" InformativeScreenshot="79edfb07e01e307c98b6e8ec01ce2334.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Konut*' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target DesignTimeRectangle="790, 336, 12, 29" ElementType="Text" FriendlyName="'-'" FullSelectorArgument="&lt;webctrl class='splitter' parentid='searchForm' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='splitter' parentid='searchForm' tag='SPAN' type='' aaname=' &amp;#x9;                                            - &amp;#x9;                                        ' check:innerText='-' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAhCAYAAADQ1StpAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEtSURBVEhL5ZVLjoMwEES5/8XIZhYzBxjbxJDBOQFCyNNlaOJPJw5ss3gimHrlxkJK83dV/l1GW3KogEkKnHN+HKwY3KEgAwlrcOCGAlBIFdhrpmk6XQC3WZbldAHcYwXb+4NzBRGfXDBuHC5gkT/hakESlsgLJOHeP3DRVS7IxN/vi28vrW+/fvb1BKkgn+AZTw9xPygG4VwG9KwoiEPgDnq9YjWtaZI1baT9raP7vOAhmICzhnYioVN+MIRWvicscVXiBCa0I8xBS0GEAxA3WSxIwoCFgI5Y14qCVFgJU2Tws3KCLJBME9FtyBNEAWBeUBTUpLgYFAU1AfDr4ffLglxk4vM5X4ArsRfM8xxuJEGCDxoO3PDXNlhbBGvAgdtID3N4bN495nBBWqL8Pwy9m1rECzk8AAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NTypeInto.Target>
+                                </uix:NTypeInto>
+                                <uix:NSelectItem DisplayName="Oda Sayısı Alanı Seçildi." sap:VirtualizedContainerService.HintSize="560,157" sap2010:WorkflowViewState.IdRef="NSelectItem_7" Item="[StrOdaSayisi]" ScopeIdentifier="eb6ed2e7-e687-41aa-8b8b-40cb6f4144c2" Version="V3">
+                                  <uix:NSelectItem.Items>
+                                    <scg:List x:TypeArguments="x:String" Capacity="45">
+                                      <x:String>Tümü</x:String>
+                                      <x:String>Stüdyo (1+0)</x:String>
+                                      <x:String>1+1</x:String>
+                                      <x:String>1.5+1</x:String>
+                                      <x:String>2+0</x:String>
+                                      <x:String>2+1</x:String>
+                                      <x:String>2.5+1</x:String>
+                                      <x:String>2+2</x:String>
+                                      <x:String>3+0</x:String>
+                                      <x:String>3+1</x:String>
+                                      <x:String>3.5+1</x:String>
+                                      <x:String>3+2</x:String>
+                                      <x:String>3+3</x:String>
+                                      <x:String>4+0</x:String>
+                                      <x:String>4+1</x:String>
+                                      <x:String>4.5+1</x:String>
+                                      <x:String>4+2</x:String>
+                                      <x:String>4+3</x:String>
+                                      <x:String>4+4</x:String>
+                                      <x:String>5+1</x:String>
+                                      <x:String>5.5+1</x:String>
+                                      <x:String>5+2</x:String>
+                                      <x:String>5+3</x:String>
+                                      <x:String>5+4</x:String>
+                                      <x:String>6+1</x:String>
+                                      <x:String>6+2</x:String>
+                                      <x:String>6.5+1</x:String>
+                                      <x:String>6+3</x:String>
+                                      <x:String>6+4</x:String>
+                                      <x:String>7+1</x:String>
+                                      <x:String>7+2</x:String>
+                                      <x:String>7+3</x:String>
+                                      <x:String>8+1</x:String>
+                                      <x:String>8+2</x:String>
+                                      <x:String>8+3</x:String>
+                                      <x:String>8+4</x:String>
+                                      <x:String>9+1</x:String>
+                                      <x:String>9+2</x:String>
+                                      <x:String>9+3</x:String>
+                                      <x:String>9+4</x:String>
+                                      <x:String>9+5</x:String>
+                                      <x:String>9+6</x:String>
+                                      <x:String>10+1</x:String>
+                                      <x:String>10+2</x:String>
+                                      <x:String>10 Üzeri</x:String>
+                                    </scg:List>
+                                  </uix:NSelectItem.Items>
+                                  <uix:NSelectItem.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://www.sahibinden.com/kategori/emlak-konut" CvTextArgument="Oda Sayisi" CvType="Text" DesignTimeRectangle="945, 483, 129, 20" DesignTimeScaleFactor="1.1299999952316284" ElementType="Text" FriendlyName="'Oda Sayısı'" FullSelectorArgument="[&quot;&lt;html app='chrome.exe' /&gt;&lt;webctrl aaname='                                  &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;  {{&quot;+StrOdaSayisi+&quot;}}' class='option-label' parentid='searchForm' tag='LABEL' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;div&amp;gt;div&amp;gt;li&amp;gt;label' /&gt;&quot;]" FuzzySelectorArgument="&lt;webctrl aaname='Oda*' parentid='searchForm' tag='SPAN' type='' class='' check:text='Oda Sayısı' /&gt;" Guid="7bbd2060-b20f-488a-ab21-23c9e0debaed" ImageBase64="" InformativeScreenshot="c361b055beadd4b4ea05dda9522cbfb4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target CvElementArea="934, 474, 180, 37" CvTextArea="943, 485, 62, 15" CvTextArgument="Oda Sayisi" CvType="InputBox" DesignTimeRectangle="935, 475, 179, 36" ElementType="InputBox" FriendlyName="'Oda Sayisi'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NSelectItem.Target>
+                                </uix:NSelectItem>
+                                <ui:Check AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" Action="Check" DisplayName="Okunan Oda sayısı seçildi." sap:VirtualizedContainerService.HintSize="560,107" sap2010:WorkflowViewState.IdRef="Check_1">
+                                  <ui:Check.Target>
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e508e14d-b991-4e6a-bca2-a0082aceaeec" InformativeScreenshot="358057af8d6ffd902c54187dc973276f" Selector="[string.Format(&quot;&lt;webctrl aaname='                                  &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;   {0}' class='option-label' parentid='searchForm' tag='LABEL' /&gt;&quot;, StrOdaSayisi)]">
+                                      <ui:Target.TimeoutMS>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                      </ui:Target.TimeoutMS>
+                                      <ui:Target.WaitForReady>
+                                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                                      </ui:Target.WaitForReady>
+                                    </ui:Target>
+                                  </ui:Check.Target>
+                                </ui:Check>
+                                <ui:LogMessage DisplayName="Bilgilendirme yapldı." sap:VirtualizedContainerService.HintSize="560,143" sap2010:WorkflowViewState.IdRef="LogMessage_14" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot; StrMaxTl  ve StrOdasayisi değişkenleri sorunsuz seçildi&quot;]" />
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Ara Buttonuna tıklandı." sap:VirtualizedContainerService.HintSize="560,157" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="eb6ed2e7-e687-41aa-8b8b-40cb6f4144c2" Version="V3">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://www.sahibinden.com/kategori/emlak-konut" CvElementArea="1233, 335, 87, 32" CvTextArea="1264, 344, 25, 12" CvTextArgument="Ara" CvType="Button" DesignTimeRectangle="1234, 336, 86, 29" DesignTimeScaleFactor="0.8999999761581421" ElementType="Text" FriendlyName="'Ara'" FullSelectorArgument="&lt;webctrl aaname='Ara' parentid='searchForm' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Ara' parentid='searchForm' tag='A' type='' class='btn search' check:text='Ara' /&gt;" Guid="1a7b08fa-d705-44af-9290-47b2e0fd6c87" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFoAAAAhCAYAAABZTbwAAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAASsSURBVGhD7ZrdTxxVFMD3j+pzfdGmPqh0talatQa/8KXxoeqDsVAbNH5EiVo1bXgA/OCl0RdE47ZQsRWoQhcI7JBlZj9nlgLlQyCiJsdzzsydvTN7d1lgme3DneTHnXvPuXdmf1zOTMjG7LwFS7YFK8gy4eC5xD2iFGRVgsdEngetxdB5NcT1inh9hFpGjIfigRwilKMcl/DvyUOVE4Zz5XvdI+RV3HvMQdE06N9ESEhYruirBLPk3cBr+Dfi3URVQbViApEj8kL5/ueSxvzx0H35yOPhmEdgDWlMRny+u0jMKWR4sG9wAlo6EvDI+V80B4Q89v444YsmYsUcGi+YHHzpUhLavprRHBDySD7Jq7+jSXQpn+bfxCtfBifo/v775LOUS7uiCyzaBDs7z4GXv5jSNAjyaWfmeVcv5k2IFbImFDOGFt1gyGfRMlzRSCyfMSFvuqJf/PyOpkGQzwJ6JdEE72gh+oXP1JMEOq4eF8jxgOgiinawfhRwi1Og9dMJZFK3DWhZNJUOlMyiqX6Q+bJoTSPwRaNfrtElSfTzXX9I/Fml1fF64izaKx381kE/hOgzn7hJZ7zkpvRvbMAWuEdxpo78+7Qvi+aHIf0Qop/7eBy5rWgFhx//LvefpxkP24STobi6vf/iStH0vkeBZzlxvIntXSii303DgHHe1jsw+VM5/q33S9jKrXMewDYMS+Plwx3f/XqH11aIXsInohD9zEejyFjz2ultlLQOP7T2Qbf5DyvbMKbhSS9eFroKA29+D8dau+FIaz/0TDvQ/SqdIyOrbspivnL9CFulaNsTffrDUTiNST6R9rMw8zcJMuDIa4PYdyDHxtbg504355usK3pjbowFx/35wxBvH3bXG1qHTUqyDTh2XsQ99nQ/B+vLopfCop/64Hd4ugaHGr++5j8Ew4c5Osg5X2f/5T6JfuCNodpzUfRDb0vrI1F+PvJZRNEkmRzHlmXR799qGixx24EuLgehMmAvwAmRg4cr+ro3dxEKPLqGJQfn9NuwQV0WXXmdqGDR6JUku6LxyW57/1Q69d7NJlFiWZupMTj6+jVp3IIklW16KA7chL5MWbSfl1hzS8WWDV1nB+CUO4FFP/iWWCd6lKIdIfrd3zAJibpN0h/+Doz398LDF4LxPst7KKamoCcgOuHn9aR3eDx8/LVgqa8XQUs+qVJQxWDRK9KOPtk50jQePYt/9m1XIV4RS8DxNiolvXC8fQTi53q5rBw9l1DkhHHnBNeLBhaNXpWin+j8FZMEI16fJsp9Ha8nLna0XzpItCgdj1+8oWkQ5NOv0fR6J4uOvzPMSRXtxSrjOl41HhAd3tEnLgxpGoQWHRHkU7x1EAHRj3Vc0zSIXUQnvMRwK9DxeuNK0aWsAS0d6q83afYH+eT3aPRLxO45rugrV29BS7t6kmZvkMfL6NNBr7SRWfQKil7MzYOVSoIxdRtSU2OQSnrQeSMQ63lrGtMuNfP2Q2idOSk2d6c6s+Jcyq8HeQ1/DCGPlpFkrySaiNFXcZeLaawns5CZT4I5NwkLiJmqjmWUUcVrIc+j6xyU8PqqHJk0MVuJKne/kGTySV7drzpb8D+4wCeIgMGLTAAAAABJRU5ErkJggg==" InformativeScreenshot="69ab4bd5e9183e264260179678d178c6.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Konut*' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                                  </uix:NClick.Target>
+                                </uix:NClick>
+                                <ui:LogMessage DisplayName="Bilgilendirme Yapıldı." sap:VirtualizedContainerService.HintSize="560,143" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Arama Buttonuna Basıldı&quot;]" />
+                                <ui:UiElementExists DisplayName="İlan Bulunamadı Kontorlüne bakıldı." Exists="[FiltreBulunamadı]" sap:VirtualizedContainerService.HintSize="560,107" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
+                                  <ui:UiElementExists.Target>
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="77a4f815-386a-4817-a139-cb439b8fa160" InformativeScreenshot="22dffa092f250c0fa912f3c71cecbf0c" Selector="&lt;webctrl id='saveSearchResult' tag='SPAN' /&gt;">
+                                      <ui:Target.TimeoutMS>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                      </ui:Target.TimeoutMS>
+                                      <ui:Target.WaitForReady>
+                                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                                      </ui:Target.WaitForReady>
+                                    </ui:Target>
+                                  </ui:UiElementExists.Target>
+                                </ui:UiElementExists>
+                                <If Condition="[FiltreBulunamadı]" DisplayName="İlan Bulunamadı Kontorlü Sağlandı" sap:VirtualizedContainerService.HintSize="560,1503" sap2010:WorkflowViewState.IdRef="If_2">
+                                  <If.Then>
+                                    <Sequence sap:VirtualizedContainerService.HintSize="376,361" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,143" sap2010:WorkflowViewState.IdRef="LogMessage_22" Level="[UiPath.Core.Activities.LogLevel.Error]" Message="[&quot;Bu aramaya ait ilan Bulunamadı&quot;]" />
+                                      <Throw Exception="[new BusinessRuleException(&quot;Bu aramaya ait ilan bulunamadı.&quot;)]" sap:VirtualizedContainerService.HintSize="334,90" sap2010:WorkflowViewState.IdRef="Throw_2" />
+                                    </Sequence>
+                                  </If.Then>
+                                  <If.Else>
+                                    <Sequence sap:VirtualizedContainerService.HintSize="526,960" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Çıkan Sonuçları Extract Table Data ile Okundu." ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='İlan Basligi' ReferenceName='Column0'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='MetreKare(Brüt)' ReferenceName='Column1'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Oda Sayisi' ReferenceName='Column2'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Fiyat' ReferenceName='Column3'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Tarih' ReferenceName='Column4'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Mahalle' ReferenceName='Column5'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='tr' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='3' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='fulltext'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='4' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='fulltext'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='5' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column3' attr='fulltext'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='6' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column4' attr='fulltext'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='7' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column5' attr='fulltext'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='8' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="484,157" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="eb6ed2e7-e687-41aa-8b8b-40cb6f4144c2" Version="V3">
+                                        <uix:NExtractData.NextLink>
+                                          <uix:TargetAnchorable BrowserURL="https://www.sahibinden.com/satilik/diyarbakir-ergani?price_min=1000000&amp;a20=38474&amp;price_max=5000000" CvElementArea="1148, 585, 97, 35" CvTextArea="1169, 593, 55, 15" CvTextArgument="Sonraki" CvType="Button" DesignTimeRectangle="1150, 587, 94, 34" DesignTimeScaleFactor="1.1299999952316284" ElementType="Text" FriendlyName="'Sonraki'" FullSelectorArgument="&lt;webctrl class='prevNextBut' parentid='searchResultsSearchForm' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl class='prevNextBut' parentid='searchResultsSearchForm' tag='A' type='' aaname='Sonraki ' check:innerText='Sonraki' /&gt;" Guid="9f28a19a-bd55-4ce2-918a-2ca17f7dd7ff" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGIAAAAmCAYAAAA/bE50AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAHwSURBVGhD7Zs9jsIwEEa5EzfhHtyCC1DuAaBHXAHRUtKloUCIOmm9nnic2GMbod3FDNnvSS4mOD/+nu1QwMwAFUCEEgYRXdeZy+VimqZBq9Qob8qdGETQwbZtuQI1oLwpd2IQQYZAfXzuEPFmIEIJEKEEiFACRCgBIpQAEcx1tzWz+d4cua5NRRFns5p/2cFyWx7MlT/RwDMijuvXPXclESxhfebactrH9Zv5HyvidjALK2J14roEyQlWzWJ35w8cY1jh6tqazY07WIY+/lrBDO5n9HBeHHoigp85nCyfvyIyg0qQsrgOZbiwwhDvZrOMwxn7pILGiZCu0FgEX1c87wS2plyIMblB9uckIRdWQFTHfXLI+4XXKQU+CRE9fmVQiwbkZqjcitxWNYYqQyfyIvKyQ4oixD1DpiPCk+zfNUTwduMnQnR/fx4fL2yh0xNBsAy3b79ahJcwHi+uiMy7yTNNEeLlnBtkH04uLK6Jp0TILwKWoggqokky8vkiaGBiAMmgZFiZmflbEcO1OOhHkl0dvyumsSL84H3LDUj0kdvDj0VY3PHg3kJG7rw+eNvn0ar9K+qJAA+BCCVAhBIgQgkQoQSIUAJEKAEilAARSoAIJSQi8Gvw+mR/DY7/R9RvlHfy/wjwXiBCCRChAmO+AdbmKfA9UNn3AAAAAElFTkSuQmCC" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Ergani Satılık Ev Fiyatları sahibinden.com&amp;apos;da' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                                        </uix:NExtractData.NextLink>
+                                        <uix:NExtractData.Target>
+                                          <uix:TargetAnchorable DesignTimeRectangle="556, 615, 1049, 2375" DesignTimeScaleFactor="1.1299999952316284" FriendlyName="'Daire'" FullSelectorArgument="&lt;webctrl id='searchResultsTable' tag='TABLE' /&gt;&lt;webctrl tag='TBODY' /&gt;" Guid="e96c6c50-455f-4037-b242-e8313adf7d68" InformativeScreenshot="8cde11907638528bd6295548d68bfed9.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Ergani Satılık Ev Fiyatları sahibinden.com&amp;apos;da' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                                        </uix:NExtractData.Target>
+                                      </uix:NExtractData>
+                                      <ui:LogMessage DisplayName="Bilgilendirme yapıldı" sap:VirtualizedContainerService.HintSize="484,143" sap2010:WorkflowViewState.IdRef="LogMessage_15" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Çıkan Sonuçları Extract data Tableye başarılı bir şekilde yüklendi.&quot;]" />
+                                      <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Okunan verileri Excel Dosyasına kaydedildi." sap:VirtualizedContainerService.HintSize="484,492" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_2" InstanceCachePeriod="3000" WorkbookPath="[Strİl+ &quot;-&quot;+Strilce+ &quot;İlan sonucları.xlsx&quot;]">
+                                        <ui:ExcelApplicationScope.Body>
+                                          <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+                                            <ActivityAction.Argument>
+                                              <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+                                            </ActivityAction.Argument>
+                                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,382" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <ui:ExcelWriteRange AddHeaders="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data yazdırıldı." sap:VirtualizedContainerService.HintSize="388,88" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_1" SheetName="Sayfa1" StartingCell="A1" />
+                                              <ui:LogMessage DisplayName="Bilgilendirme Yapıldı." sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="LogMessage_16" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Okunan veriler yeni bir excel dosyasına kaydedildi.&quot;]" />
+                                            </Sequence>
+                                          </ActivityAction>
+                                        </ui:ExcelApplicationScope.Body>
+                                      </ui:ExcelApplicationScope>
+                                    </Sequence>
+                                  </If.Else>
+                                </If>
+                                <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="560,82" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="https://www.sahibinden.com/kategori/emlak-konut" Version="V3" />
+                              </Sequence>
+                            </Sequence>
+                          </ActivityAction>
+                        </ui:ForEachRow.Body>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:ForEachRow>
+                    </Sequence>
+                  </ActivityAction>
+                </uix:NApplicationCard.Body>
+                <uix:NApplicationCard.TargetApp>
+                  <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAyBSURBVGhDvZgJcFXVGYBfFkIWkryEhCSQ5WXfd0ICgSwEkrAm0upgLSHWsUKrZepSrQrRodQNTGSLQthBWxSD6LS2As8FrCgQdcbiWOBFDQEGkheiQuCF8/f/z3LffeESFm3/mW/+//zn3pzvnHfvS8D0U4S/p4d5dnhw/eKkqMYNmfGtB8dl2Y5OyLGfnjgaTk8sgKMlufZPxmbYWvOSrYsToxqrQs21kd5eFrw1EKlDdiJfIr2SI0grMgeha376IOl7osIWtOYkWZWoyLq6XI0Fp8rzOZ+Py4a7RoWyIW5ul/FHwTW4gDQhYciPDxJ/yDKy4T8TsrtPl+czLlaW55pJHKGs7xGbM+LYMA93I9FrcQ6pQW4+HrJEoLh6NEiITtQpx3uleUyd9EmsT5bm8vGJ0jx4ICbCSOxGYMjjiBty/UHP657R6W10mhwSHJCVKM9lmMvyJHRNPqxIiTESulnuRK4vbgsLmfvV+Gy7JohSXFAT1ctK8LQ7iZJc1lmSw7ZnJYCHscjNcgmZjAweD8aENyhZJaZOl+REzhEZ52iey2OvszRX5jyoHB5oJOGCu7vzvdDXg0DfXFePB6LDG/Snq2TEycq6BCUxn5gghanGHsHnkLaiDKPFDfH29uYYzRlA70MEcmXcFjZ8bieX0j0OcixEpaDMQjqHNiLq8dlM5afiI40W13Bzc+N51qxZ0N7eDjabDWpra13mBmEe4hr0wh4Zm9nNBVGaJEhUf6pCGmW5qMgdquabyIEOzERRgB+dlNHiGj4+PnDy5ElQ0dHRAUOHDjW8dgBvI65xoDDN5nKKJES1FNJnXhdnMSWrMZ7I5tn/Or7zfX194fTp01IfeE2bMrp2AD2IM+6PCmvQTpHQibsKkpwO2sSA3rcye13jMfD09OS5oqIC2tra4PDhw1BeXu4yNwh9iAivEF/Lc78vc54mSn2L8A1oQs6a5nhWjMtkHdXFcG5dM/Qd/gQcnSf4aXp5eRkt7EJoaChUVVXB4sWLOVSHhIQYXjsA5ydgmZe3sWRjLRyeWqCdnqugFC7Okqg6G07+vJpLG0V0dLTRwtoLOm/ePJfHR8WpU6fg7rvvdrnWAPoDEE9/uK8l7+VZkI/M/1OlJvYNnqqrtOAbxdgMZm96Bi739splRXTaGbz16UVYa+2D7HHTjRbmBAQEQF9fH7+HMcYzharPnz8Pw4YNM7xXIn4XBJdE1+dsq2G522ohb9st8LdbC6VgJuN5nCKTS1P9NeaeltV8IRVvtl2EeRu/h4KGHhjzxDmeo6r+bLQwx2w2w9GjR6GrqwvOnj0L3d3dHKqpR3N0jdG9EvE1mrKkvC1naw0jedpI3bPVQlZKf11E0pgVYzOhu+lpqU0nfhnu2SDERz/RAwXIaKqR9N8cMFqYQ49GUFAQBAcHG0Jz1/hdYOGPT/aWmSwbN5C7tRZyEMor7ylmXxelMzxpLkx1uxx31FYy9diQ/IzGXk2YyF/khMYB8RONFv9RzJjgD2Y/d7MpID+sJmdLDQykeN1M+KIkk7UXkjhtIgMotxemse/e2snlKX69/jsUtetAcZTO0/XS5n8Ebh7G30Z0woNhdI/XEDewtSZC3ZTAetPIX6Q3Zm+eCYIanmkDWZtnsKfvm6BJ2wrTwVaUDh23VEp1gF34zJOoMWITiugZKwxlboaWxyLA8WEKLPvdiCZT/CNjrVmbZkLmphlMv4nMTdMZ9Q9MzgEuL+l6/impDzBt2TnIXWh3gqIu4wGEl/zBUOhGWPir4eDYn8wc+1Ngx1ORO02pSytsWZtmgBGZG6ez25dUMFtBKjuO2MakwYVDH3P5L0/2Qw5KESSn6sHphthbt4K7l7+h3GD4+7rDzmdGonwiyiey/v1JcOy1WJspY+M0lrURhZFMznReU59q6u2qyeUbOI4bUC/v3n9fgmwU4jwuM0KiIut7+r4dUu/7HPwTKg1FjZg6zheO77CAY18Cc+xL5Ll/fwKc+Xus3ZS5YTpkbEBZzFejYnk1HB+dwo7lJ2u/bZr3XoAsFFcoWZeeQc03K+u4OW9CWMnDkFZQCUlJSeDn5wd+Pm6QGDUEqgp92MI7g2DPylFAso59cax/Xzz070vgY15jNqVvmMoyUNKVaZCxHsE6ff1UloY03VUEx/JTtA2s3nNek9OTOch44Jzq0c9SQaJOWUWcYH88zYPjg1j8BDBjbUpdWWVPWz+FpZMwQjXl9HVT+Zj6aeumsDHN1fBZcRr+kdbBF9p5uA8yH+uGjMe6eCYRnvX1gKyuzaCerr8HH0cejnNcimQdH1hwI7E4jpUbwBp7PIua90wJz5bZSJJIRVFNHLOC+sQjC4rh/MEDfK0T+AuMhARCzpiBc1dee6Szn/9M1vMvLtWPciToJJpRz9mPZsTR7aNspsjf5rWmtUzFUxayaS1TXOrUlmpG8D5ed/C1NXwxivqWc5COAukoJfKNU7m0R/40gMvHnkS5GBR1BWXB8X4UShNYy/Hu5WFWU/jstEYhJ2T5ZuSYSFlbhRugXM2I2Y01cjmA1kMXIe3RLkhDEQ7WJMV710Bd13pI/DVK0f/xWBSMxNMmQcqRJE2yfCyyBPvL7g1sMgWOHVVPklx0bTUQfDNrFaInEOMDnZ/JJQHmru2FVBRRkFTqo2c1Uf2c6zVdeO85+VPw8Tn9qhKVjELhkQjlSOjnPRpj/YFg5njvGpOHj6eZy62phuQ1lXwTKbzGTWHWQz26puKVudB78Xu+cEf3ZZj0rB1SUJrEU/4osrPu0np0jepNes4OHfgeUfT2fY+nX0iyQvS9CF5T7tdnDv4y4/MRzBLmQf/DbTJFPVBgTVlTJUWrIPmlSpTH8UuqJ/p8LHtLPmzmi1PQJurwNEnuCuQG9MzBa+keFT1f4bPPpUgunHHex7933iPUOBw3EYEbFP1DLSFtXJ7CXBG9IBnFFEkvTmbOcaVLn8+9KHorDm6RCiJeP9gHE5/phiSUTEZUVsxZ0wOv6555ih2frYNuKz0emrCOMJTWjwX9yJwq77lS32Ry9/Y0JzSW2xNRjuCCUpJykoTmKOt79EnQI6CPIyf64Z0vLsLyd36AFbt/wI1dcDlxit6+72DJ/mZ4dVcqSo2gU8YcJuswlKRaMQLHI8DxbigjaE57fFQET49rUFJJzSjbPIklNU/GGsFeghwnrMYsx4lyvnTrHWzHl/+QateOj058CqVb7mClLSUoi2KKd0NQENHGoRwpjwynDcC6h/03SG1n0KcQt7SsW4klrkYo83qSy5iktTHNyXHZll/Ckn3NXPDb3lNSF3hNveUfb4b89bXiXryv/R38VtHEQjATutpKtcscJzrM3fX0VQRNi2vAE+YLxK+uYJo4zwoxjl9F8/wT0WrqJ6wSUE9lMa/vTWQPvZyHMsH4OJBYMIkKSWuQrIlg14xzi+q9G6SucUQ9UtimJBRKPmFVhUQ/P3Cs76nrKyBu5UQuT3Vecxm0/xNfRinFBa0kGYw9kR1WM+M9axCOEcxHXwk4LjWvHp7B3pbY50rs8SsrQEGL6jPJiFzOlBhlQTmfUwwcx6+cCI3bU1AuCGVJzMwuWQNxTJhlL5BRvrQ3gPeIM28G2C1Xe3QGhv+Y8PrYFeWMUIsKsF6BmcBxHGbnNWKOxlofM9X6+8a/VCylnHKiDpTCgeDQsj/Dmuea4iG1Uu/6InhK3BO0uBGxy8s0Sa2/vPyK6xQWvJ7uIba/jn8qk5gStAaguMhCdhhK+9OmBFgvrBv6hNS6sTBPsTRwMURIiEwoMcsLWC+nTZVztHk5VpmYvW40F9LTbyVZ155jrx/j/b3DYNHcIYO/tNcK34yQ2uinx9tRVBOJfaEcYl4oRflSRrXqxeI11CdoTPfox+1v40uJciTmih/ii30/uLTHhzmQM7t87XVVnvVS48eFZ5C3JXJRoY0LNqF4k8w45pJYxzSVIGJOQ5svYfdvyhByXNQXSJKLi57Ie3wowydrvNssYW7X98LeSARWxzQosWiUsjSVctHoRqpFVnVMo5gjilcV4enjtwuJClmJtybt2DOUnXnDy76wzvPmnvfrDfo0ht+evIFESVJP1LIJfANRjRP4HNa8v/av+M9AFERhkhbsHqrVZ94Y0r2wzqPB7Odmlsv874M2MqwgvD7iwfw2EufCz5doiF4JjFtZRPJOSHy3F0Ng9/NDrPf+zGPB/1XcKGgz9LKba+MaQ+dnWkc+PsZGm4hcOp795dVReMKe9q+2edpee9Kzdel8j8Y5VW5zfxppk+m/QvZhjz/dPLwAAAAASUVORK5CYII=" InformativeScreenshot="bf63cebf44f0167fd687416ccf1ffd73.jpg" Selector="&lt;html app='chrome.exe' title='Konut Fiyatları ve Emlak İlanları sahibinden.com&amp;apos;da' /&gt;" Title="Konut Fiyatları ve Emlak İlanları sahibinden.com'da" Url="https://www.sahibinden.com/kategori/emlak-konut" />
+                </uix:NApplicationCard.TargetApp>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NApplicationCard>
+            </Sequence>
+          </If.Then>
+          <If.Else>
+            <Sequence sap:VirtualizedContainerService.HintSize="376,359" sap2010:WorkflowViewState.IdRef="Sequence_13">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,141" sap2010:WorkflowViewState.IdRef="LogMessage_21" Level="[UiPath.Core.Activities.LogLevel.Error]" Message="[&quot;Veriler Bulunamadı&quot;]" />
+              <Throw Exception="[New BusinessRuleException(&quot;Veriler Bulunamadı&quot;)]" sap:VirtualizedContainerService.HintSize="334,90" sap2010:WorkflowViewState.IdRef="Throw_1" />
+            </Sequence>
+          </If.Else>
+        </If>
+      </Sequence>
+      <ui:LogMessage DisplayName="Bilgilendirme Yapıldı." sap:VirtualizedContainerService.HintSize="932,141" sap2010:WorkflowViewState.IdRef="LogMessage_19" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Proje Sonlandırıldı.&quot;]" />
+    </Sequence>
+  </Sequence>
+</Activity>
